@@ -1,0 +1,14 @@
+body {
+  background-color: blanchedalmond;
+}
+/* navbar */
+
+@media (min-width: 992px) {
+  .navbar {
+    min-height: 100vh;
+    width: var(--sidbar-width);
+    background: linear-gradient(blanchedalmond), (rgb(180, 115, 68));
+    background-size: cover;
+    background-position: center;
+  }
+}

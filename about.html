@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap Sidebar Navigation</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        display: flex;
+      }
+
+      nav {
+        height: 100vh; /* Navbar takes the full height of the viewport */
+        position: fixed;
+        width: 250px; /* Width of the sidebar */
+        top: 0;
+        left: 0;
+      }
+
+      .content {
+        margin-left: 250px; /* Make space for the sidebar */
+        padding: 20px;
+        display: flex;
+        justify-content: center; /* Center content horizontally */
+        align-items: center; /* Center content vertically */
+        flex-direction: column; /* Stack children vertically */
+        max-width: 800px; /* Max width for content */
+        margin: 20px auto; /* Center content with margin */
+      }
+
+      .navbar-nav {
+        width: 100%;
+        display: flex;
+        flex-direction: column; /* Vertical navigation */
+      }
+
+      .navbar-nav li {
+        width: 100%;
+      }
+
+      .navbar-nav .nav-link {
+        text-align: left;
+        padding: 10px 20px;
+        font-size: 20px;
+      }
+
+      .navbar-brand {
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar bg-body-tertiary">
+      <div class="container d-flex flex-column">
+        <span class="h3">Tiara Shofa Shofiana</span>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="project.html">Project</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="kontak.html">Kontak</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="content">
+      <h1>About Me</h1>
+      <p class="text-center">
+        Halo! Nama saya Tiara Shofa Shofiana. Saat ini, saya adalah mahasiswa
+        Program Studi Teknik Informatika di Universitas Nahdlatul Ulama Jepara.
+        Saya memiliki minat yang besar dalam bidang teknologi dan pengembangan
+        perangkat lunak. Sejak kecil, saya selalu tertarik dengan komputer dan
+        cara kerjanya. Kuliah di Teknik Informatika memberikan saya kesempatan
+        untuk mengeksplorasi berbagai aspek teknologi, dari pemrograman hingga
+        desain sistem. Saya senang belajar tentang bahasa pemrograman baru dan
+        mengerjakan proyek-proyek kreatif yang dapat memecahkan masalah nyata.
+        Saya percaya bahwa teknologi memiliki kekuatan untuk mengubah dunia, dan
+        saya ingin menjadi bagian dari perubahan itu. Selain belajar, saya aktif
+        dalam organisasi kampus yang berfokus pada teknologi dan inovasi. Dalam
+        waktu luang, saya suka membaca buku, mengikuti kursus online, dan
+        bermain game. Saya berharap untuk terus mengembangkan keterampilan saya
+        dan berkontribusi pada proyek-proyek yang berdampak. Terima kasih telah
+        mengunjungi portofolio saya!
+      </p>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
